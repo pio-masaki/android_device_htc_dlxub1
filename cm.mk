@@ -18,7 +18,7 @@ $(call inherit-product, device/htc/dlx/full_dlxub1.mk)
 PRODUCT_DEVICE := dlxub1
 PRODUCT_NAME := cm_dlxub1
 PRODUCT_BRAND := Verizon
-PRODUCT_MODEL := HTC6435LVW
+PRODUCT_MODEL := X920D
 PRODUCT_MANUFACTURER := HTC
 
 # Set build fingerprint / ID / Product Name etc.
