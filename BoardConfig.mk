@@ -27,17 +27,17 @@
 # inherit from common msm8960
 -include device/htc/msm8960-common/BoardConfigCommon.mk
 
-TARGET_SPECIFIC_HEADER_PATH := device/htc/dlx/include
+TARGET_SPECIFIC_HEADER_PATH := device/htc/dlxub1/include
 
 # Flags
 TARGET_GLOBAL_CFLAGS += -mfpu=neon-vfpv4 -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mfpu=neon-vfpv4 -mfloat-abi=softfp
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := dlx
+TARGET_OTA_ASSERT_DEVICE := dlxub1
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := dlx
+TARGET_BOOTLOADER_BOARD_NAME := dlxub1
 BOARD_HAS_LARGE_FILESYSTEM := true
 
 # Adreno configuration
@@ -46,9 +46,9 @@ BOARD_EGL_CFG := device/htc/dlx/configs/egl.cfg
 #Kernel
 BOARD_KERNEL_BASE := 0x80600000
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=dlx user_debug=0
+BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=dlxub1 user_debug=0
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01800000
-TARGET_KERNEL_CONFIG := cyanogenmod_dlx_defconfig
+TARGET_KERNEL_CONFIG := cyanogenmod_dlxub1_defconfig
 TARGET_KERNEL_SOURCE := kernel/htc/m7
 
 # Audio
@@ -56,7 +56,7 @@ BOARD_USES_FLUENCE_INCALL := true
 BOARD_USES_SEPERATED_AUDIO_INPUT := true
 BOARD_USES_SEPERATED_VOICE_SPEAKER := true
 BOARD_USES_SEPERATED_VOIP := true
-BOARD_AUDIO_AMPLIFIER := device/htc/dlx/libaudioamp
+BOARD_AUDIO_AMPLIFIER := device/htc/dlxub1/libaudioamp
 BOARD_HAVE_HTC_CSDCLIENT := true
 
 # Camera
@@ -73,8 +73,8 @@ HAVE_ADRENO_SOURCE := false
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH_BCM := true
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/htc/dlx/bluetooth/include
-BOARD_BLUEDROID_VENDOR_CONF := device/htc/dlx/bluetooth/vnd_dlx.txt
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/htc/dlxub1/bluetooth/include
+BOARD_BLUEDROID_VENDOR_CONF := device/htc/dlx/bluetooth/vnd_dlxub1.txt
 BOARD_BLUETOOTH_USES_HCIATTACH_PROPERTY := false
 
 # Use libril in the device tree

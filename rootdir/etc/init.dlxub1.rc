@@ -1,4 +1,4 @@
-import init.dlx.usb.rc
+import init.dlxub1.usb.rc
 
 on early-init
     mount debugfs debugfs /sys/kernel/debug
@@ -38,7 +38,7 @@ on init
        
 # on emmc mount the partition containing firmware
 on fs
-   mount_all /fstab.dlx
+   mount_all /fstab.dlxub1
    setprop ro.crypto.fuse_sdcard true
 
    mkdir /devlog 0700 root root
