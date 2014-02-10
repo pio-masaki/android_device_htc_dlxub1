@@ -1,8 +1,9 @@
 #
-# system.prop for dlx
+# system.prop for dlxub1
 #
+
 mobiledata.interfaces=rmnet0,rmnet1
-telephony.lteOnCdmaDevice=1
+telephony.lteOnGsmDevice=1
 rild.libpath=/system/lib/libril-qc-qmi-1.so
 rild.libargs=-d /dev/smd0
 persist.rild.nitz_plmn=
@@ -20,13 +21,7 @@ ro.config.svlte1x=true
 ro.ril.svdo=true
 ro.ril.transmitpower=true
 ro.baseband.arch = mdm
-ro.telephony.default_network=10
-
-# Set CDMA SUBSCRIPTION SOURCE to RUIM in Database for this device
-ro.telephony.default_cdma_sub=0
-
-# Device needs to get CDMA subscription when RUIM is ready
-ro.cdma.subscribe_on_ruim_ready = true
+ro.telephony.default_network=9
 
 # For GPS privacy lock
 ro.gps.set_privacy=1
